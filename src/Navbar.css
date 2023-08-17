@@ -1,0 +1,8 @@
+.navlist{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+}
