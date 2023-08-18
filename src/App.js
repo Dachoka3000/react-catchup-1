@@ -14,22 +14,22 @@ import Students from './StudentsList';
 
 function App() {
 
-  function getStudentName(event){
-    event.preventDefault()
-    console.log(event.target.value)
-  }
+  // function getStudentName(event){
+  //   event.preventDefault()
+  //   console.log(event.target.value)
+  // }
 
-  function getStudentImage(event){
-    event.preventDefault()
-    console.log(event.target.value)
-  }
+  // function getStudentImage(event){
+  //   event.preventDefault()
+  //   console.log(event.target.value)
+  // }
 
-  function getStudentPartingShot(event){
-    event.preventDefault()
-    console.log(event.target.value)
-  }
-  let number4 = 4
-  let number5 = 5
+  // function getStudentPartingShot(event){
+  //   event.preventDefault()
+  //   console.log(event.target.value)
+  // }
+  // let number4 = 4
+  // let number5 = 5
   // function addNumbers(){
   //   console.log(number4+number5)
   // }
@@ -70,7 +70,39 @@ function App() {
     setMemo(event.target.value)
   }
 
-  const [students, setStudents]=useState([])
+  const [students, setStudents]=useState([
+    {
+      studentName: "Maggie Mwende",
+      studentImage: "https://images.pexels.com/photos/4710656/pexels-photo-4710656.jpeg?auto=compress&cs=tinysrgb&w=600",
+      partingShot: "Maths is awesome"
+    },
+    {
+      studentName: "Mark Maasai",
+      studentImage: "https://images.pexels.com/photos/5211478/pexels-photo-5211478.jpeg?auto=compress&cs=tinysrgb&w=600",
+      partingShot: "Music is the best subject"
+    },
+    {
+      studentName: "Betty Kyalo",
+      studentImage: "https://images.pexels.com/photos/5212653/pexels-photo-5212653.jpeg?auto=compress&cs=tinysrgb&w=600",
+      partingShot: "In Home Science, you can eat your homework"
+    },
+    {
+      studentName: "Seth Olale",
+      studentImage: "https://images.pexels.com/photos/5239610/pexels-photo-5239610.jpeg?auto=compress&cs=tinysrgb&w=600",
+      partingShot: "My peers are awesome"
+    },
+    {
+      studentName: "Lilian Muli",
+      studentImage: "https://images.pexels.com/photos/4144100/pexels-photo-4144100.jpeg?auto=compress&cs=tinysrgb&w=600",
+      partingShot: "Science is so cool"
+    },
+    {
+      studentName: "Rashid Abdalla",
+      studentImage: "https://images.pexels.com/photos/5553108/pexels-photo-5553108.jpeg?auto=compress&cs=tinysrgb&w=600",
+      partingShot: "P.E made school life fun"
+    }
+
+  ])
 
   function getStudents(event){
     event.preventDefault()
@@ -104,7 +136,7 @@ function App() {
          <button >Submit</button>
       </form>
 
-      <Students student={students}/>
+      <Students students={students}/>
 
     </div>
   );
