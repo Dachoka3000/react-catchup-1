@@ -54,6 +54,18 @@ form input{
 form button{
   height: 30px; 
   padding: 5px;
+  margin: 5px;
+  background-color: aqua;
+  border: solid 1px transparent;
+}
+form button:hover{
+  background-color: navy;
+  color: white;
+}
 
-
+@media only screen and (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }
